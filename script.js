@@ -30,4 +30,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
   window.addEventListener("scroll", revealOnScroll);
   revealOnScroll(); // Run on load
+
+  const scrollTopBtn = document.getElementById("scrollTop");
+
+  window.addEventListener("scroll", () => {
+    if (scrollTopBtn) {
+      scrollTopBtn.style.display = window.scrollY > 300 ? "block" : "none";
+    }
+  });
+
+  if (scrollTopBtn) {
+    scrollTopBtn.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  }
 });
