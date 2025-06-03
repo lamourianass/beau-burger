@@ -1,0 +1,33 @@
+document.addEventListener("DOMContentLoaded", function () {
+  const burger = document.querySelector(".burger-menu");
+  const navList = document.querySelector("nav ul");
+
+  if (burger && navList) {
+    burger.addEventListener("click", function () {
+      const expanded = burger.getAttribute("aria-expanded") === "true";
+      burger.setAttribute("aria-expanded", !expanded);
+      navList.classList.toggle("menu-expanded");
+      burger.classList.toggle("rotated");
+    });
+
+    // Ensure ARIA attributes are initialized
+    burger.setAttribute("aria-expanded", "false");
+    burger.setAttribute("aria-controls", "main-navigation");
+    navList.setAttribute("id", "main-navigation");
+  }
+
+  const revealElements = document.querySelectorAll(".reveal");
+
+  const revealOnScroll = () => {
+    const windowHeight = window.innerHeight;
+    revealElements.forEach((el) => {
+      const revealTop = el.getBoundingClientRect().top;
+      if (revealTop < windowHeight - 100) {
+        el.classList.add("visible");
+      }
+    });
+  };
+
+  window.addEventListener("scroll", revealOnScroll);
+  revealOnScroll(); // Run on load
+});

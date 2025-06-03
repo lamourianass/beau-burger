@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beau Burger | Le numéro 1 du Smash Burger</title>
+    <link rel="icon" type="image/svg+xml" href="images/icon.svg" />
+    <link rel="stylesheet" href="style.css" />
+    <meta
+      name="description"
+      content="Découvrez Beau Burger, le numéro 1 du Smash Burger au Maroc. Des recettes artisanales, des produits frais et une passion pour le goût."
+    />
+    <link rel="canonical" href="https://www.beauburger.com/" />
+    <link rel="preload" as="image" href="images/logo.png" />
+    <link rel="preload" as="image" href="images/about.jpg" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Restaurant",
+        "name": "Beau Burger",
+        "image": "https://www.beauburger.ma/images/logo.png",
+        "servesCuisine": ["Burgers", "Fast Food", "Smash Burger"],
+        "telephone": "+212668080508",
+        "url": "https://www.beauburger.com",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "MA"
+        },
+        "sameAs": [
+          "https://www.instagram.com/beauburger_",
+          "https://www.facebook.com/share/18zviyAopg"
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <header role="banner">
+      <button class="burger-menu" aria-label="Ouvrir le menu">
+        <img src="images/menu.svg" alt="Menu" />
+      </button>
+      <div class="header-top">
+        <a href="index.html">
+          <img src="images/logo.png" alt="Beau Burger Logo" />
+        </a>
+        <nav aria-label="Navigation principale">
+          <ul>
+            <li><a href="#menu" aria-current="page">Menu</a></li>
+            <li><a href="#restaurants">Nos Restaurants</a></li>
+            <li><a href="#about">À-propos</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header-contact">
+        <a href="tel:0668080508" class="header-phone">
+          <img src="images/telephone.svg" alt="Téléphone" class="phone-icon" />
+          06 68 08 05 08
+        </a>
+      </div>
+    </header>
+
+    <main role="main">
+      <section id="about" class="reveal about-section">
+        <div class="about-text">
+          <h2>À-propos</h2>
+        </div>
+      </section>
+      <section class="about-highlight reveal" aria-labelledby="about-title">
+        <div class="highlight-container">
+          <div class="highlight-text">
+            <h3 id="about-title" class="highlight-heading">
+              Le numéro 1 du Smash Burger
+            </h3>
+            <p>
+              Chaque recette est pensée avec soin, chaque ingrédient est
+              sélectionné pour sa fraîcheur et sa qualité. Ici, rien n’est
+              laissé au hasard : du pain brioché maison à la viande locale
+              travaillée à la plaque, en passant par des sauces originales
+              élaborées en interne après des mois de tests.
+            </p>
+          </div>
+          <div class="highlight-image">
+            <img
+              src="images/about.jpg"
+              alt="Burger Beau Burger"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section id="menu" aria-labelledby="menu-title" class="reveal">
+        <h2 id="menu-title">Notre Menu</h2>
+
+        <!-- BURGER VIANDE -->
+        <section class="menu-category" aria-label="Catégorie Burger Viande">
+          <h3>Burger Viande</h3>
+
+          <div class="menu-item" tabindex="0">
+            <div class="item-info">
+              <span class="item-name">N1 Truffe</span>
+              <p class="item-description">
+                Potato bun maison, double smashed patty, fromage cheddar
+                premium, champignons de paris poêlés, sauce truffe maison.
+              </p>
+            </div>
+            <span class="item-price"
+              ><span class="price-number">65</span>
+              <span class="currency"><sup>dhs</sup></span></span
+            >
+          </div>
+
+          <div class="menu-item" tabindex="0">
+            <div class="item-info">
+              <span class="item-name">
+                N2 Jalapenos
+                <img
+                  src="images/jalapeno.svg"
+                  alt="Icône épicé"
+                  class="spicy-icon"
+                  loading="lazy"
+                />
+              </span>
+              <p class="item-description">
+                Potato bun maison, double smashed patty, fromage cheddar
+                premium, salade roquette, jalapenos, oignons croustillants,
+                sauce jalapenos maison.
+              </p>
+            </div>
+            <span class="item-price"
+              ><span class="price-number">60</span>
+              <span class="currency"><sup>dhs</sup></span></span
+            >
+          </div>
+
+          <div class="menu-item" tabindex="0">
+            <div class="item-info">
+              <span class="item-name">N3 Original</span>
+              <p class="item-description">
+                Potato bun maison, double smashed patty, fromage cheddar
+                premium, salade iceberg, cornichons, oignons en brunoise, sauce
+                originale maison.
+              </p>
+            </div>
+            <span class="item-price"
+              ><span class="price-number">60</span>
+              <span class="currency"><sup>dhs</sup></span></span
+            >
+          </div>
+
+          <div class="menu-item" tabindex="0">
+            <div class="item-info">
+              <span class="item-name">N4 Signature</span>
+              <p class="item-description">
+                Potato bun maison, double smashed patty, fromage cheddar
+                premium, salade roquette, oignons caramélisés, sauce smokey
+                maison.
+              </p>
+            </div>
+            <span class="item-price"
+              ><span class="price-number">60</span>
+              <span class="currency"><sup>dhs</sup></span></span
+            >
+          </div>
+
+          <div class="menu-item" tabindex="0">
+            <div class="item-info">
+              <span class="item-name">N5 Le Frenchy</span>
+              <p class="item-description">
+                Potato bun maison, triple smashed patty, trois fromages :
+                Cheddar, Maasdam et Brie, bacon de bœuf, champignons poêlés,
+                sauce truffe maison.
+              </p>
+            </div>
+            <span class="item-price"
+              ><span class="price-number">95</span>
+              <span class="currency"><sup>dhs</sup></span></span
+            >
+          </div>
+
+          <div class="menu-item" tabindex="0">
+            <div class="item-info">
+              <span class="item-name">N6 Le Benedict</span>
+              <p class="item-description">
+                Potato bun maison, double smashed patty, salade iceberg, cheddar
+                premium, champignons poêlés, bacon grillé, œuf au plat, sauce
+                hollandaise maison.
+              </p>
+            </div>
+            <span class="item-price"
+              ><span class="price-number">80</span>
+              <span class="currency"><sup>dhs</sup></span></span
+            >
+          </div>
+
+          <div class="menu-item" tabindex="0">
+            <div class="item-info">
+              <span class="item-name">N7 Bacon Jam</span>
+              <p class="item-description">
+                Potato bun maison, double smashed patty, salade iceberg, cheddar
+                premium, bacon jam, oignons pickles maison, sauce secrète
+                maison.
+              </p>
+            </div>
+            <span class="item-price"
+              ><span class="price-number">80</span>
+              <span class="currency"><sup>dhs</sup></span></span
+            >
+          </div>
+
+          <div class="menu-item" tabindex="0">
+            <div class="item-info">
+              <span class="item-name">N8 Hash Brown</span>
+              <p class="item-description">
+                Potato bun maison, one smashed patty, cheddar premium, salade
+                iceberg, hash brown patty, sauce maison.
+              </p>
+            </div>
+            <span class="item-price"
+              ><span class="price-number">55</span>
+              <span class="currency"><sup>dhs</sup></span></span
+            >
+          </div>
+
+          <div class="menu-item" tabindex="0">
+            <div class="item-info">
+              <span class="item-name">N9 Le Classique</span>
+              <p class="item-description">
+                Potato bun maison, one smashed patty, cheddar premium, tomate,
+                salade iceberg, oignons frais, cornichons, sauce spéciale
+                maison.
+              </p>
+            </div>
+            <span class="item-price"
+              ><span class="price-number">45</span>
+              <span class="currency"><sup>dhs</sup></span></span
+            >
+          </div>
+        </section>
+
+        <!-- BURGER CHICKEN -->
+        <section class="menu-category" aria-label="Catégorie Burger Chicken">
+          <h3>Burger Chicken</h3>
+
+          <div class="menu-item" tabindex="0">
+            <div class="item-info">
+              <span class="item-name">N10 Le Ranch</span>
+              <p class="item-description">
+                Potato bun maison, escalope de poulet panée, crème de choux en
+                julienne, salade iceberg, sauce cheddar et sauce aïoli maison.
+              </p>
+            </div>
+            <span class="item-price"
+              ><span class="price-number">55</span>
+              <span class="currency"><sup>dhs</sup></span></span
+            >
+          </div>
+
+          <div class="menu-item" tabindex="0">
+            <div class="item-info">
+              <span class="item-name">
+                N11 Spicy Honey
+                <img
+                  src="images/jalapeno.svg"
+                  alt="Icône épicé"
+                  class="spicy-icon"
+                  loading="lazy"
+                />
+                <img
+                  src="images/jalapeno.svg"
+                  alt="Icône épicé"
+                  class="spicy-icon"
+                  loading="lazy"
+                />
+              </span>
+              <p class="item-description">
+                Potato bun maison, escalope de poulet panée, salade iceberg,
+                sauce cheddar maison, sauce spicy honey maison.
+              </p>
+            </div>
+            <span class="item-price"
+              ><span class="price-number">50</span>
+              <span class="currency"><sup>dhs</sup></span></span
+            >
+          </div>
+
+          <div class="menu-item" tabindex="0">
+            <div class="item-info">
+              <span class="item-name">
+                N12 Nashville
+                <img
+                  src="images/jalapeno.svg"
+                  alt="Icône épicé"
+                  class="spicy-icon"
+                  loading="lazy"
+                />
+                <img
+                  src="images/jalapeno.svg"
+                  alt="Icône épicé"
+                  class="spicy-icon"
+                  loading="lazy"
+                />
+                <img
+                  src="images/jalapeno.svg"
+                  alt="Icône épicé"
+                  class="spicy-icon"
+                  loading="lazy"
+                />
+              </span>
+              <p class="item-description">
+                Potato bun maison, filet de poulet pané, salade iceberg,
+                roquette, cornichons, sauce nashville, sauce jalapenos.
+              </p>
+            </div>
+            <span class="item-price"
+              ><span class="price-number">60</span>
+              <span class="currency"><sup>dhs</sup></span></span
+            >
+          </div>
+
+          <div class="menu-item" tabindex="0">
+            <div class="item-info">
+              <span class="item-name">N13 Bellissimo</span>
+              <p class="item-description">
+                Pain ciabatta maison, filet de poulet grillé, salade roquette,
+                oignons pickles, tomates confites, tapenade d'olives noires,
+                sauce pesto parmesan, fromage Maasdam.
+              </p>
+            </div>
+            <span class="item-price"
+              ><span class="price-number">65</span>
+              <span class="currency"><sup>dhs</sup></span></span
+            >
+          </div>
+
+          <div class="menu-item" tabindex="0">
+            <div class="item-info">
+              <span class="item-name">N14 Le Crunch</span>
+              <p class="item-description">
+                Potato bun maison, hash brown patty, salade iceberg, fromage
+                cheddar fondant, sauce signature fumée maison.
+              </p>
+            </div>
+            <span class="item-price"
+              ><span class="price-number">55</span>
+              <span class="currency"><sup>dhs</sup></span></span
+            >
+          </div>
+
+          <div class="menu-item" tabindex="0">
+            <div class="item-info">
+              <span class="item-name">N15 ChickenZilla</span>
+              <p class="item-description">
+                Potato bun maison, deux filets de poulet panés, double hash
+                brown, salade iceberg, fromage Maasdam, sauce miel moutarde
+                maison.
+              </p>
+            </div>
+            <span class="item-price"
+              ><span class="price-number">75</span>
+              <span class="currency"><sup>dhs</sup></span></span
+            >
+          </div>
+        </section>
+
+        <!-- CHICKEN WINGS -->
+        <section class="menu-category" aria-label="Catégorie Chicken Wings">
+          <h3>Chicken Wings</h3>
+          <table class="wings-table">
+            <thead>
+              <tr>
+                <th scope="col"></th>
+                <th scope="col">4 Pièces</th>
+                <th scope="col">6 Pièces</th>
+                <th scope="col">8 Pièces</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Poulet BBQ</td>
+                <td>
+                  <span class="price-number">30</span>
+                  <span class="currency"><sup>dhs</sup></span>
+                </td>
+                <td>
+                  <span class="price-number">40</span>
+                  <span class="currency"><sup>dhs</sup></span>
+                </td>
+                <td>
+                  <span class="price-number">55</span>
+                  <span class="currency"><sup>dhs</sup></span>
+                </td>
+              </tr>
+              <tr>
+                <td>Sweet Chili</td>
+                <td>
+                  <span class="price-number">35</span>
+                  <span class="currency"><sup>dhs</sup></span>
+                </td>
+                <td>
+                  <span class="price-number">45</span>
+                  <span class="currency"><sup>dhs</sup></span>
+                </td>
+                <td>
+                  <span class="price-number">65</span>
+                  <span class="currency"><sup>dhs</sup></span>
+                </td>
+              </tr>
+              <tr>
+                <td>Teriyaki</td>
+                <td>
+                  <span class="price-number">35</span>
+                  <span class="currency"><sup>dhs</sup></span>
+                </td>
+                <td>
+                  <span class="price-number">45</span>
+                  <span class="currency"><sup>dhs</sup></span>
+                </td>
+                <td>
+                  <span class="price-number">65</span>
+                  <span class="currency"><sup>dhs</sup></span>
+                </td>
+              </tr>
+              <tr>
+                <td>Buffalo</td>
+                <td>
+                  <span class="price-number">35</span>
+                  <span class="currency"><sup>dhs</sup></span>
+                </td>
+                <td>
+                  <span class="price-number">45</span>
+                  <span class="currency"><sup>dhs</sup></span>
+                </td>
+                <td>
+                  <span class="price-number">65</span>
+                  <span class="currency"><sup>dhs</sup></span>
+                </td>
+              </tr>
+              <tr>
+                <td>Parmesan Aioli</td>
+                <td>
+                  <span class="price-number">40</span>
+                  <span class="currency"><sup>dhs</sup></span>
+                </td>
+                <td>
+                  <span class="price-number">60</span>
+                  <span class="currency"><sup>dhs</sup></span>
+                </td>
+                <td>
+                  <span class="price-number">75</span>
+                  <span class="currency"><sup>dhs</sup></span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <!-- CHICKEN FINGERS -->
+        <section class="menu-category" aria-label="Catégorie Chicken Fingers">
+          <h3>Chicken Fingers 5 P</h3>
+
+          <div class="menu-item" tabindex="0">
+            <div class="item-info">
+              <span class="item-name">Chicken Fingers Nature</span>
+            </div>
+            <span class="item-price"
+              ><span class="price-number">30</span>
+              <span class="currency"><sup>dhs</sup></span></span
+            >
+          </div>
+
+          <div class="menu-item" tabindex="0">
+            <div class="item-info">
+              <span class="item-name">Chicken Fingers Spicy Honey</span>
+            </div>
+            <span class="item-price"
+              ><span class="price-number">35</span>
+              <span class="currency"><sup>dhs</sup></span></span
+            >
+          </div>
+
+          <div class="menu-item" tabindex="0">
+            <div class="item-info">
+              <span class="item-name">Chicken Fingers Nashville</span>
+            </div>
+            <span class="item-price"
+              ><span class="price-number">40</span>
+              <span class="currency"><sup>dhs</sup></span></span
+            >
+          </div>
+
+          <div class="menu-item" tabindex="0">
+            <div class="item-info">
+              <span class="item-name">Chicken Fingers Cheesy</span>
+            </div>
+            <span class="item-price"
+              ><span class="price-number">40</span>
+              <span class="currency"><sup>dhs</sup></span></span
+            >
+          </div>
+
+          <div class="menu-item" tabindex="0">
+            <div class="item-info">
+              <span class="item-name">Chicken Fingers Cheesy Bacon</span>
+            </div>
+            <span class="item-price"
+              ><span class="price-number">60</span>
+              <span class="currency"><sup>dhs</sup></span></span
+            >
+          </div>
+        </section>
+
+        <!-- FRENCH FRIES -->
+        <section class="menu-category" aria-label="Catégorie French Fries">
+          <h3>French Fries</h3>
+
+          <div class="menu-item" tabindex="0">
+            <div class="item-info">
+              <span class="item-name">Frites Natures</span>
+            </div>
+            <span class="item-price"
+              ><span class="price-number">15</span>
+              <span class="currency"><sup>dhs</sup></span></span
+            >
+          </div>
+
+          <div class="menu-item" tabindex="0">
+            <div class="item-info">
+              <span class="item-name">Frites Jalapenos</span>
+            </div>
+            <span class="item-price"
+              ><span class="price-number">30</span>
+              <span class="currency"><sup>dhs</sup></span></span
+            >
+          </div>
+
+          <div class="menu-item" tabindex="0">
+            <div class="item-info">
+              <span class="item-name">Frites Chicken Cheesy</span>
+            </div>
+            <span class="item-price"
+              ><span class="price-number">40</span>
+              <span class="currency"><sup>dhs</sup></span></span
+            >
+          </div>
+
+          <div class="menu-item" tabindex="0">
+            <div class="item-info">
+              <span class="item-name">Frites Cheesy Chicken Bacon</span>
+            </div>
+            <span class="item-price"
+              ><span class="price-number">45</span>
+              <span class="currency"><sup>dhs</sup></span></span
+            >
+          </div>
+
+          <div class="menu-item" tabindex="0">
+            <div class="item-info">
+              <span class="item-name">Frites Cheesy Beef Bacon</span>
+            </div>
+            <span class="item-price"
+              ><span class="price-number">50</span>
+              <span class="currency"><sup>dhs</sup></span></span
+            >
+          </div>
+
+          <div class="menu-item" tabindex="0">
+            <div class="item-info">
+              <span class="item-name">Frites Cheesy Chicken Bacon Jam</span>
+            </div>
+            <span class="item-price"
+              ><span class="price-number">60</span>
+              <span class="currency"><sup>dhs</sup></span></span
+            >
+          </div>
+        </section>
+
+        <!-- SALADES -->
+        <section class="menu-category" aria-label="Catégorie Salades">
+          <h3>Salades</h3>
+
+          <div class="menu-item" tabindex="0">
+            <div class="item-info">
+              <span class="item-name">Sweet Corn Salad</span>
+              <p class="item-description">
+                Maïs grillé, avocat, filet de poulet grillé, poivrons, oignons
+                confits, feta sur lit d’iceberg, vinaigrette balsamique.
+              </p>
+            </div>
+            <span class="item-price"
+              ><span class="price-number">55</span>
+              <span class="currency"><sup>dhs</sup></span></span
+            >
+          </div>
+
+          <div class="menu-item" tabindex="0">
+            <div class="item-info">
+              <span class="item-name">Chicken Cabbage Salad</span>
+              <p class="item-description">
+                Chou blanc et violet, tomate cerise, concombre, filet de poulet
+                pané, sauce verte maison.
+              </p>
+            </div>
+            <span class="item-price"
+              ><span class="price-number">50</span>
+              <span class="currency"><sup>dhs</sup></span></span
+            >
+          </div>
+        </section>
+
+        <!-- MENU ENFANT -->
+        <section class="menu-category" aria-label="Catégorie Menu Enfant">
+          <h3>Menu Enfant</h3>
+
+          <div class="menu-item" tabindex="0">
+            <div class="item-info">
+              <span class="item-name">Mini Burger + Frites + Jus</span>
+            </div>
+            <span class="item-price"
+              ><span class="price-number">50</span>
+              <span class="currency"><sup>dhs</sup></span></span
+            >
+          </div>
+
+          <div class="menu-item" tabindex="0">
+            <div class="item-info">
+              <span class="item-name">+ 2 pièces Chicken Fingers</span>
+            </div>
+            <span class="item-price"
+              ><span class="price-number">50</span>
+              <span class="currency"><sup>dhs</sup></span></span
+            >
+          </div>
+        </section>
+
+        <!-- SAUCES -->
+        <section class="menu-category" aria-label="Catégorie Sauces">
+          <h3>Sauces</h3>
+
+          <div class="menu-item" tabindex="0">
+            <div class="item-info">
+              <span class="item-name">Sauce Jalapenos</span>
+            </div>
+            <span class="item-price"
+              ><span class="price-number">5</span>
+              <span class="currency"><sup>dhs</sup></span></span
+            >
+          </div>
+          <div class="menu-item" tabindex="0">
+            <div class="item-info">
+              <span class="item-name">Sauce Aïoli</span>
+            </div>
+            <span class="item-price"
+              ><span class="price-number">5</span>
+              <span class="currency"><sup>dhs</sup></span></span
+            >
+          </div>
+          <div class="menu-item" tabindex="0">
+            <div class="item-info">
+              <span class="item-name">Sauce Smoky</span>
+            </div>
+            <span class="item-price"
+              ><span class="price-number">5</span>
+              <span class="currency"><sup>dhs</sup></span></span
+            >
+          </div>
+          <div class="menu-item" tabindex="0">
+            <div class="item-info">
+              <span class="item-name">Sauce Truffe</span>
+            </div>
+            <span class="item-price"
+              ><span class="price-number">5</span>
+              <span class="currency"><sup>dhs</sup></span></span
+            >
+          </div>
+          <div class="menu-item" tabindex="0">
+            <div class="item-info">
+              <span class="item-name">Sauce Originale</span>
+            </div>
+            <span class="item-price"
+              ><span class="price-number">5</span>
+              <span class="currency"><sup>dhs</sup></span></span
+            >
+          </div>
+          <div class="menu-item" tabindex="0">
+            <div class="item-info">
+              <span class="item-name">Sauce Miel Moutarde</span>
+            </div>
+            <span class="item-price"
+              ><span class="price-number">5</span>
+              <span class="currency"><sup>dhs</sup></span></span
+            >
+          </div>
+          <div class="menu-item" tabindex="0">
+            <div class="item-info">
+              <span class="item-name">Sauce Hollandaise</span>
+            </div>
+            <span class="item-price"
+              ><span class="price-number">7</span>
+              <span class="currency"><sup>dhs</sup></span></span
+            >
+          </div>
+          <div class="menu-item" tabindex="0">
+            <div class="item-info">
+              <span class="item-name">Sauce Cheddar</span>
+            </div>
+            <span class="item-price"
+              ><span class="price-number">10</span>
+              <span class="currency"><sup>dhs</sup></span></span
+            >
+          </div>
+          <div class="menu-item" tabindex="0">
+            <div class="item-info">
+              <span class="item-name">Sauce Bacon Jam</span>
+            </div>
+            <span class="item-price"
+              ><span class="price-number">10</span>
+              <span class="currency"><sup>dhs</sup></span></span
+            >
+          </div>
+        </section>
+
+        <!-- BOISSONS -->
+        <section class="menu-category" aria-label="Catégorie Boissons">
+          <h3>Boissons</h3>
+
+          <div class="menu-item" tabindex="0">
+            <div class="item-info">
+              <span class="item-name">Boisson gazeuse 33cl</span>
+              <p class="item-description">
+                Coca, Coca Zero, Poms, Hawai, Sprite, Schweppes Citron,
+                Schweppes Tonic
+              </p>
+            </div>
+            <span class="item-price"
+              ><span class="price-number">15</span>
+              <span class="currency"><sup>dhs</sup></span></span
+            >
+          </div>
+
+          <div class="menu-item" tabindex="0">
+            <div class="item-info"><span class="item-name">Oulmès</span></div>
+            <span class="item-price"
+              ><span class="price-number">10</span>
+              <span class="currency"><sup>dhs</sup></span></span
+            >
+          </div>
+          <div class="menu-item" tabindex="0">
+            <div class="item-info"><span class="item-name">Sidi Ali</span></div>
+            <span class="item-price"
+              ><span class="price-number">10</span>
+              <span class="currency"><sup>dhs</sup></span></span
+            >
+          </div>
+          <div class="menu-item" tabindex="0">
+            <div class="item-info"><span class="item-name">Oasis</span></div>
+            <span class="item-price"
+              ><span class="price-number">20</span>
+              <span class="currency"><sup>dhs</sup></span></span
+            >
+          </div>
+          <div class="menu-item" tabindex="0">
+            <div class="item-info">
+              <span class="item-name">Menu + Frites + Boisson</span>
+            </div>
+            <span class="item-price"
+              ><span class="price-number">25</span>
+              <span class="currency"><sup>dhs</sup></span></span
+            >
+          </div>
+        </section>
+      </section>
+
+      <section
+        id="restaurants"
+        aria-labelledby="restaurants-title"
+        class="reveal"
+      >
+        <h2 id="restaurants-title">Nos Restaurants</h2>
+        <p>
+          Retrouvez nos restaurants à Casablanca, Rabat, Marrakech, et bientôt
+          dans d’autres villes du Maroc.
+        </p>
+      </section>
+    </main>
+
+    <footer role="contentinfo">
+      <div class="footer-content">
+        <div class="footer-left">
+          <img
+            src="images/icon.svg"
+            alt="Logo"
+            class="footer-logo"
+            loading="lazy"
+          />
+        </div>
+        <div class="footer-center">
+          <p>&copy; 2025 Beau Burger. Tous droits réservés.</p>
+        </div>
+        <div class="footer-right footer-socials">
+          <a
+            href="https://www.facebook.com/share/18zviyAopg"
+            target="_blank"
+            rel="noopener"
+          >
+            <img
+              src="images/facebook.svg"
+              alt="Logo Facebook de Beau Burger"
+              loading="lazy"
+            />
+          </a>
+          <a
+            href="https://www.instagram.com/beauburger_"
+            target="_blank"
+            rel="noopener"
+          >
+            <img
+              src="images/instagram.svg"
+              alt="Logo Instagram de Beau Burger"
+              loading="lazy"
+            />
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js" defer></script>
+  </body>
+</html>
