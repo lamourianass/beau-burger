@@ -33,17 +33,22 @@ header {
 
 .header-phone {
   margin-top: 1rem;
-  font-size: 1.05rem;
-  color: #444;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--primary);
   display: inline-flex;
-  justify-content: center;
   align-items: center;
-  gap: 0.6rem;
-  font-weight: 400;
-  padding: 0.4rem 0.75rem;
+  gap: 0.5rem;
+  padding: 0.4rem 0.9rem;
   background-color: var(--primary-light);
   border: 1px solid var(--primary-border);
-  border-radius: 6px;
+  border-radius: 8px;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.header-phone:hover {
+  background-color: #ffeaea;
+  box-shadow: 0 2px 8px rgba(214, 40, 40, 0.1);
 }
 
 .phone-icon {
@@ -51,22 +56,20 @@ header {
   height: 18px;
   object-fit: contain;
   display: inline-block;
-  position: relative;
-  top: 1px;
+  vertical-align: middle;
+  margin-bottom: -2px;
 }
 
-.header-phone a {
-  color: var(--primary) !important;
-  text-decoration: none !important;
-  font-weight: 500;
-  display: inline-block;
-}
-
-.header-phone a:hover,
+.header-phone a,
+.header-phone a:visited,
 .header-phone a:focus,
-.header-phone a:visited {
-  color: var(--primary) !important;
+.header-phone a:hover {
+  color: var(--primary);
+  font-weight: 500;
+  display: inline-flex;
+  cursor: pointer;
   text-decoration: none !important;
+  border-bottom: none !important;
 }
 
 header img {
@@ -498,6 +501,11 @@ img {
   margin-right: 0.5rem;
 }
 
+.header-phone-link {
+  text-decoration: none !important;
+  border-bottom: none !important;
+}
+
 .highlight-container {
   display: flex;
   flex-direction: row;
@@ -568,3 +576,4 @@ img {
   height: auto;
   border-radius: 0.75rem;
 }
+
