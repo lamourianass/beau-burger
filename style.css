@@ -27,7 +27,7 @@ body {
 /* HEADER */
 header {
   text-align: center;
-  padding: 2rem 1rem;
+  padding: 1rem 1rem;
   border-bottom: 1px solid #eee;
 }
 
@@ -410,22 +410,20 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0.25rem;
+    gap: 0;
   }
-
   .header-top img {
-    margin-bottom: 0rem;
-    max-width: 120px;
+    margin-bottom: 0;
+    max-width: 110px;
   }
-
   .header-contact {
-    margin-top: 0 !important;
+    margin-top: 0.2rem !important;
   }
   .header-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0rem;
+    gap: 0;
     margin-top: 0;
     margin-bottom: 0;
   }
@@ -526,7 +524,6 @@ img {
   }
 
   /* .header-wrapper block replaced above */
-
 }
 
 /* Burger menu styles */
