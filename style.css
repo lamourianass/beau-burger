@@ -35,50 +35,33 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 
 .header-phone {
-  margin-top: 1rem;
-  font-size: 1.1rem;
-  font-weight: 500;
-  color: var(--primary);
+  all: unset;
   display: inline-flex;
   align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  padding: 0.4rem 0.9rem;
-  background-color: var(--primary-light);
-  border: 1px solid var(--primary-border);
-  border-radius: 8px;
-  transition: background 0.3s ease, box-shadow 0.3s ease;
+  gap: 0.25rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: black;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 .header-phone:hover {
-  background-color: #ffeaea;
-  box-shadow: 0 2px 8px rgba(214, 40, 40, 0.1);
+  opacity: 0.7;
 }
 
 .phone-icon {
-  width: 18px;
-  height: 18px;
-  object-fit: contain;
+  width: 13px;
+  height: 13px;
   display: inline-block;
-  margin-right: 0.3rem;
-  vertical-align: middle;
-  margin-bottom: 0;
+  object-fit: contain;
+  margin-bottom: -1px;
 }
 
-.header-phone a,
-.header-phone a:visited,
-.header-phone a:focus,
-.header-phone a:hover {
-  color: var(--primary);
-  font-weight: 500;
-  display: inline-flex;
-  cursor: pointer;
-  text-decoration: none !important;
-  border-bottom: none !important;
-}
 
 header img {
   max-width: 150px;
@@ -89,9 +72,9 @@ header img {
 nav ul {
   list-style: none;
   display: flex;
-  justify-content: center;
   gap: 2rem;
   padding: 0;
+  margin: 0;
 }
 
 nav a {
@@ -387,6 +370,42 @@ img {
   .item-price {
     font-size: 1rem;
   }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+
+  .header-top > a {
+    flex-shrink: 0;
+  }
+
+  .header-top nav {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+  }
+
+  .header-contact {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-shrink: 0;
+    position: absolute;
+    right: 1rem;
+    bottom: 0.5rem;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -428,9 +447,9 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0;
-    margin-top: 0;
-    margin-bottom: 0;
+    gap: 0.75rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
   }
   nav ul {
     transform: scaleY(0);
@@ -833,4 +852,19 @@ h3 {
 #menu,
 #restaurants {
   scroll-margin-top: 380px;
+}
+
+/* Dedicated phone link styling */
+.phone-link {
+  color: black !important;
+  text-decoration: none !important;
+  font-weight: 500;
+}
+
+.phone-link:visited,
+.phone-link:active,
+.phone-link:focus,
+.phone-link:hover {
+  color: black !important;
+  text-decoration: none !important;
 }
