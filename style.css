@@ -38,6 +38,7 @@ header {
   color: var(--primary);
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 0.5rem;
   padding: 0.4rem 0.9rem;
   background-color: var(--primary-light);
@@ -56,8 +57,9 @@ header {
   height: 18px;
   object-fit: contain;
   display: inline-block;
+  margin-right: 0.3rem;
   vertical-align: middle;
-  margin-bottom: -2px;
+  margin-bottom: 0;
 }
 
 .header-phone a,
@@ -449,6 +451,49 @@ img {
     top: 0;
     z-index: 10;
     background: white;
+    padding: 1rem 1rem;
+  }
+
+  #about .highlight-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  #about .highlight-heading {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 0;
+  }
+
+  #about .highlight-content {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+
+  #about .highlight-text,
+  #about .highlight-image {
+    width: 50%;
+  }
+
+  #about .highlight-image {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  #about .highlight-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.75rem;
+  }
+
+  /* Center .highlight-heading on mobile for .highlight-left */
+  .highlight-left .highlight-heading {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -529,6 +574,14 @@ img {
 .highlight-image img {
   max-width: 100%;
   height: auto;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.highlight-image img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
 }
 
 .highlight-heading {
@@ -577,3 +630,66 @@ img {
   border-radius: 0.75rem;
 }
 
+
+/* Header contact container for phone block alignment */
+.header-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+/* Highlight Columns Layout */
+.highlight-columns {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.highlight-left {
+  flex: 1;
+  min-width: 300px;
+  text-align: left;
+}
+
+.highlight-right {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.highlight-right img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.highlight-right img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+@media (max-width: 767px) {
+  .highlight-columns {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .highlight-left,
+  .highlight-right {
+    width: 100%;
+  }
+
+  .highlight-left {
+    text-align: center;
+  }
+
+  .highlight-right {
+    justify-content: center;
+  }
+}
