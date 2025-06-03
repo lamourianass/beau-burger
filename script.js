@@ -18,6 +18,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const revealElements = document.querySelectorAll(".reveal");
 
+  // Collapse menu when a nav link is clicked with fade-out animation
+  const navLinks = document.querySelectorAll("nav a");
+  navLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      navList.classList.add("menu-closing");
+      setTimeout(() => {
+        navList.classList.remove("menu-expanded", "menu-closing");
+        burger.setAttribute("aria-expanded", "false");
+        burger.classList.remove("rotated");
+      }, 200);
+    });
+  });
+
   const revealOnScroll = () => {
     const windowHeight = window.innerHeight;
     revealElements.forEach((el) => {

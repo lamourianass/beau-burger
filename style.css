@@ -827,3 +827,10 @@ h3 {
   transform: scale(1.05);
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
 }
+
+/* Scroll offset for sticky header compensation */
+#about,
+#menu,
+#restaurants {
+  scroll-margin-top: 350px;
+}
