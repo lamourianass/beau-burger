@@ -335,6 +335,11 @@ footer {
   margin-left: 4px;
 }
 
+.spicy-icon.gray {
+  filter: grayscale(100%);
+  opacity: 0.6;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -714,4 +719,24 @@ img {
   .highlight-right {
     justify-content: center;
   }
+}
+
+
+.section-icon {
+  width: 45px;
+  height: 45px;
+  vertical-align: middle;
+  display: inline-block;
+  object-fit: contain;
+  opacity: 0.9;
+}
+
+h3 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.lowecase {
+  text-transform: lowercase;
 }
